@@ -11,12 +11,12 @@ class Song
     @@genre << genre
   end
   def name
-    @@name
+    self.name
   end
   def artists
-    @@artist
+    self.artist
   end
   def genre
-    @@genre
+    self.genre
   end
 end
