@@ -1,27 +1,30 @@
 class Song
-  @@name = []
-  @@artist= []
-  @@genre = []
+  @@names = []
+  @@artists = []
+  @@genres = []
   @@count = 0
   @@artist_count = {}
   @@genre_count = {}
   def initialize (song,artist,genre)
-    @@name << song
-    @@artist << artist
-    @@genre << genre
+    @@names << song
+    @@artists << artist
+    @@genres << genre
+    @name = song
+    @artist = artist
+    @genre = genre
   end
   def name
-    @@name
+    @name
   end
-  def artists
-    @@artist
+  def artist
+    @artist
   end
   def genre
-    @@genre
+    @genre
   end
 end
 
 hit_me = Song.new("hit me baby one more time", "Brittany Spears", "pop")
 hit_me.name
-hit_me.artists
+hit_me.artist
 hit_me.genre
