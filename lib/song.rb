@@ -20,3 +20,8 @@ class Song
     @@genre
   end
 end
+
+hit_me = Song.new()
+hit_me.name
+hit_me.artist
+hit_me.genre
