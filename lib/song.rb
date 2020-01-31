@@ -28,7 +28,7 @@ class Song
   def genre
     @genre
   end
-  def count
+  def class_variable_get
     @@count
   end
   def artists
