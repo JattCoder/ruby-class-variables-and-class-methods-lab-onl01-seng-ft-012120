@@ -5,7 +5,7 @@ class Song
   @@count = 0
   @@artist_count = {}
   @@genre_count = {}
-  def initialize (song,artist,genre)
+  def new (song,artist,genre)
     @@name << song
     @@artist << artist
     @@genre << genre
