@@ -6,6 +6,12 @@ class Song
   @@artist_count = {}
   @@genre_count = {}
   def initialize (song,artist,genre)
+    artistcountval = @@artist_count[artist]
+    genrecountval = @@genre_count[genre]
+    @@artist_count[artist] = 0 if artistcountval == nil
+    @@artist_count[artist] = (artistcountval + 1) if artistcountval != nil
+    @@genre_count[genre] = 0 if genrecountval == nil
+    @@genre_count[genre] = (genrecountval + 1) if genrecountval != nil
     @@names << song
     @@artists << artist
     @@genres << genre
@@ -21,6 +27,21 @@ class Song
   end
   def genre
     @genre
+  end
+  def count
+    @@count
+  end
+  def artists
+    @@artists
+  end
+  def genres
+    @@genres
+  end
+  def genre_count
+    @@genre_count
+  end
+  def artist_count
+    @@artist_count
   end
 end
 
